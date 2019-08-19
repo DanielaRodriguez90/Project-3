@@ -14,8 +14,10 @@ class Search extends Component {
   };
 
   componentDidMount() {
-    API.getRecipes()
-      .then(res => this.setState({ recipes: res.data.message }))
+    API.getRecipes(this.state.search)
+      .then(res => {this.setState({ recipes: res.data})
+      console.log(res.data)
+  })
       .catch(err => console.log(err));
   }
 
