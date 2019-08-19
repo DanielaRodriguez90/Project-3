@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AppNavbar from './components/AppNavbar';
 import ShoppingList from './components/ShoppingList';
 import ItemModal from './components/itemModal';
+import SearchForm from './components/SearchForm';
+import SearchResults from './components/SearchResults';
 import { Container } from 'reactstrap';
 
 import { Provider } from 'react-redux';
@@ -23,6 +25,8 @@ class App extends Component {
           <AppNavbar />
           <Container>
           <ItemModal/>
+          <SearchForm />
+          <SearchResults />
           <ShoppingList />
           </Container>
         </div>
