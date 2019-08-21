@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Container from "../components/Container";
+// import Container from "reactstrap";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
+// import Alert from "../components/Alert";
 
 class Search extends Component {
   state = {
@@ -12,14 +12,6 @@ class Search extends Component {
     results: [],
     error: ""
   };
-
-  componentDidMount() {
-    API.getRecipes(this.state.search)
-      .then(res => {this.setState({ recipes: res.data})
-      console.log(res.data)
-  })
-      .catch(err => console.log(err));
-  }
 
   handleInputChange = event => {
     this.setState({ search: event.target.value });
@@ -32,28 +24,28 @@ class Search extends Component {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
         }
-        this.setState({ results: res.data.message, error: "" });
+        this.setState({ recipes: res.data, error: "" });
       })
       .catch(err => this.setState({ error: err.message }));
   };
   render() {
     return (
       <div>
-        <Container style={{ minHeight: "80%" }}>
+        {/* <Container style={{ minHeight: "80%" }}> */}
           <h1 className="text-center">Search Recipes</h1>
-          <Alert
+          {/* <Alert
             type="danger"
             style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
           >
             {this.state.error}
-          </Alert>
+          </Alert> */}
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
             recipes={this.state.recipes}
           />
-          <SearchResults results={this.state.results} />
-        </Container>
+          <SearchResults recipes={this.state.recipes} />
+        {/* </Container> */}
       </div>
     );
   }

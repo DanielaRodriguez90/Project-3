@@ -6,12 +6,18 @@ function SearchResults(props) {
   return (
     <div>
     <Card>
-        <CardHeader tag="h3">Featured</CardHeader>
-        <CardBody>
-          <CardTitle>Special Title Treatment</CardTitle>
-          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-          <Button className="btn btn-dark">Cook This!</Button>
-        </CardBody>
+        {props.recipes.results? props.recipes.results.map(result => 
+        <Card>
+            <CardBody>
+            <CardHeader tag="h3">{result.title}</CardHeader>
+            <CardText>{result.ingredients}</CardText>
+            <a href={result.href}>
+              <Button className="btn btn-dark">Cook This!</Button>
+            </a>
+          </CardBody>
+        </Card>
+         ):null}
+       
       </Card>
     </div>
   );
