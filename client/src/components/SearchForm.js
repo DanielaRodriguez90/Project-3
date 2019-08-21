@@ -12,10 +12,10 @@ function SearchForm(props) {
           list="Recipes"
           type="text"
           className="form-control"
-          placeholder="Recie LookUp"
+          placeholder="Dish"
           id="recipe"
         />
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-dark">
           Search
         </button>
       </div>
