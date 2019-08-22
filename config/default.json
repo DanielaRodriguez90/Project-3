@@ -1,4 +1,0 @@
-{
-    "mongoURI": "MONGO URI",
-    "jwtSecret": "hc_myjwtSecret"
-}

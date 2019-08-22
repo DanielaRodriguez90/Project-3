@@ -40,6 +40,11 @@ class AppNavbar extends Component {
             <strong>{user ? `Welcome ${user.name}` : ""}</strong>
           </span>
         </NavItem>
+        <NavItem/>
+          <NavLink href="/shoppinglist">
+              Shopping List
+          </NavLink>
+        <NavItem/>
         <NavItem>
           <Logout />
         </NavItem>
@@ -48,6 +53,11 @@ class AppNavbar extends Component {
 
     const guestLinks = (
       <Fragment>
+          <NavItem/>
+          <NavLink href="/">
+              Search
+          </NavLink>
+        <NavItem/>
         <NavItem>
           <RegisterModal />
         </NavItem>
