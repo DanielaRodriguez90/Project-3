@@ -1,19 +1,20 @@
 import React from "react";
-import { Card, Button, CardHeader, CardBody,
-  CardTitle, CardText } from 'reactstrap';
+import { Card, Button, CardTitle, CardBody,CardText } from 'reactstrap';
 
 function SearchResults(props) {
   return (
     <div>
-    <Card>
+    <Card className="card">
         {props.recipes.results? props.recipes.results.map(result => 
         <Card>
             <CardBody>
-            <CardHeader tag="h3">{result.title}</CardHeader>
-            <CardText>{result.ingredients}</CardText>
+            <CardTitle className="cardTitle" tag="h2">{result.title}</CardTitle>
+            <CardText className="cardText">
+            <h3><strong>What You'll Need: </strong></h3>{result.ingredients}</CardText>
             <a href={result.href}>
-              <Button className="btn btn-dark">Cook This!</Button>
+              <Button size="md" className="btn btn-warning">Cook This!</Button>
             </a>
+            <hr/>
           </CardBody>
         </Card>
          ):null}

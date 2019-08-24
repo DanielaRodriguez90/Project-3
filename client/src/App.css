@@ -1,8 +1,88 @@
+
 body {
-    background-color: #FFEBCD; 
+    background-color: #336699; 
 }
+
+.navBrand{
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+}
+
+.jumbotron {
+    margin:20px;
+    text-align: center;
+    background-color: #336699;
+}
+
+.text-warning{
+    /* this is the subtitle in jumbotron */
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+}
+
+.display-3{
+    /* this is Main title in jumbotron */
+    color: whitesmoke;
+    font-family: 'Fredericka the Great', cursive;
+}
+.form-group{
+    /* recipe search box */
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    background-color: none;
+}
+
+#recipe{
+    font-size: 24px;
+    font-family: 'Livvic', sans-serif;
+    background-color: #ffe680;
+    text-align: center;
+}
+
+button {
+    /* recipe search button */
+    margin-top: 1rem;
+}
+.card {
+    border: 0;
+    background-color: #f2f2f2;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.cardTitle{
+    /* recipe results search title */
+    font-family: 'Livvic', sans-serif;
+    margin: 0;
+    
+}
+
+.cardText {
+    /* recipe results ingredients list text */
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btn-warning{
+    font-family: 'Merienda', cursive;
+    font-size: 24px;
+    color: #404040
+}
+
+.listGroupItem{
+    /* ingredient list/item */
+    background-color: #ffe680;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+}
+
 .remove-btn {
+    /* check mark button on shopping list */
     margin-right: 0.5rem;
+    
 }
 
 .fade-enter {
@@ -23,8 +103,3 @@ body {
     opacity: 0.01;
     transition: opacity 1000ms ease-in;
 }
-
-.mb-5 {
-    background-color: teal;
-}
-

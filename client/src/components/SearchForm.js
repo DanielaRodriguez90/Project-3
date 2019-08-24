@@ -2,9 +2,8 @@ import React from "react";
 
 function SearchForm(props) {
   return (
-    <form className="search">
+    <form>
       <div className="form-group">
-        <label htmlFor="recipe">What Would You Like to Cook?</label>
         <input
           value={props.search}
           onChange={props.handleInputChange}
@@ -12,10 +11,10 @@ function SearchForm(props) {
           list="Recipes"
           type="text"
           className="form-control"
-          placeholder="Dish"
+          placeholder="What Would You Like to Cook?"
           id="recipe"
         />
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-dark">
+        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-warning btn-block">
           Search
         </button>
       </div>

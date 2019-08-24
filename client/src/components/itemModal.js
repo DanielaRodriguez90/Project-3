@@ -52,7 +52,7 @@ class ItemModal extends Component {
         return (
             <div>
                 {this.props.isAuthenticated ? <Button
-                    color="dark"
+                    color="warning"
                     style={{ marginBottom: "2rem" }}
                     onClick={this.toggle}
                 >Add Item</Button> : <h4 className="mb-3 ml-4">Please Log In to Manage Items</h4>}
@@ -78,7 +78,7 @@ class ItemModal extends Component {
                                     onChange={this.onChange}
                                 />
                                 <Button
-                                    color="dark"
+                                    color="warning"
                                     style={{ marginTop: "2rem" }}
                                     block
                                 >

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Jumbotron, Container } from 'reactstrap';
 import API from "../utils/API";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
@@ -29,7 +30,12 @@ class Search extends Component {
   render() {
     return (
       <div>
-          <h1 className="text-center">Search Recipes</h1>
+          <Jumbotron className="jumbotron" fluid>
+            <Container fluid>
+              <h1 className="display-3">HomeCooks</h1>
+              <p className="text-warning">Search. Cook. Repeat!</p>
+            </Container>
+          </Jumbotron>
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
