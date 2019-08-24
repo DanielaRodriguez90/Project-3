@@ -3,7 +3,7 @@ body {
     background-color: #336699; 
 }
 
-.navBrand{
+.navBrand {
     font-family: 'Merienda', cursive;
     font-size: 25px;
 }
@@ -14,18 +14,18 @@ body {
     background-color: #336699;
 }
 
-.text-warning{
+.text-warning {
     /* this is the subtitle in jumbotron */
     font-family: 'Merienda', cursive;
     font-size: 30px;
 }
 
-.display-3{
+.display-3 {
     /* this is Main title in jumbotron */
     color: whitesmoke;
     font-family: 'Fredericka the Great', cursive;
 }
-.form-group{
+.form-group {
     /* recipe search box */
     margin-left: 40px;
     margin-right: 40px;
@@ -33,7 +33,7 @@ body {
     background-color: none;
 }
 
-#recipe{
+#recipe {
     font-size: 24px;
     font-family: 'Livvic', sans-serif;
     background-color: #ffe680;
@@ -51,7 +51,7 @@ button {
     margin-right: 40px;
 }
 
-.cardTitle{
+.cardTitle {
     /* recipe results search title */
     font-family: 'Livvic', sans-serif;
     margin: 0;
@@ -66,13 +66,44 @@ button {
     margin-left: 1rem;
 }
 
-.btn-warning{
+.btn-warning {
+    /* main buttons */
     font-family: 'Merienda', cursive;
     font-size: 24px;
     color: #404040
 }
 
-.listGroupItem{
+.register{
+    font-family: 'Livvic', sans-serif;
+}
+
+.registerHeader{
+    font-family: 'Livvic', sans-serif;
+    background-color: #336699;
+    color: #404040;
+}
+
+.logIn {
+    font-family: 'Livvic', sans-serif;
+}
+
+.logInHeader {
+    font-family: 'Livvic', sans-serif;
+    background-color: #336699;
+    color: #404040;
+}
+
+.itemModal{
+    font-family: 'Livvic', sans-serif;
+}
+
+.itemHeader{
+    font-family: 'Livvic', sans-serif;
+    background-color: #336699;
+    color: #404040;
+}
+
+.listGroupItem {
     /* ingredient list/item */
     background-color: #ffe680;
     font-family: 'Merienda', cursive;

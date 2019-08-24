@@ -87,12 +87,12 @@ class RegisterModal extends Component {
         </NavLink>
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Register</ModalHeader>
+          <ModalHeader className="registerHeader" toggle={this.toggle}>Register</ModalHeader>
           <ModalBody>
             {this.state.msg ? (
               <Alert color='danger'>{this.state.msg}</Alert>
             ) : null}
-            <Form onSubmit={this.onSubmit}>
+            <Form className="register" onSubmit={this.onSubmit}>
               <FormGroup>
                 <Label for='name'>Name</Label>
                 <Input

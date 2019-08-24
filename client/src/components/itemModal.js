@@ -53,9 +53,10 @@ class ItemModal extends Component {
             <div>
                 {this.props.isAuthenticated ? <Button
                     color="warning"
+                    block
                     style={{ marginBottom: "2rem" }}
                     onClick={this.toggle}
-                >Add Item</Button> : <h4 className="mb-3 ml-4">Please Log In to Manage Items</h4>}
+                >Add Item</Button> : <h4 className="text-warning mb-3 ml-4">Please Log In to Manage Items</h4>}
 
 
 
@@ -63,13 +64,13 @@ class ItemModal extends Component {
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                 >
-                    <ModalHeader toggle={this.toggle}>
+                    <ModalHeader className="itemHeader" toggle={this.toggle}>
                         Add To Ingredient List
                     </ModalHeader>
                     <ModalBody>
-                        <Form onSubmit={this.onSubmit}>
+                        <Form className="itemModal" onSubmit={this.onSubmit}>
                             <FormGroup>
-                                <Label for="item">Item</Label>
+                                <Label for="item">Ingredients List</Label>
                                 <Input
                                     type="text"
                                     name="name"

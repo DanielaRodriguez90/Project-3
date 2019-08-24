@@ -84,12 +84,12 @@ class LoginModal extends Component {
         </NavLink>
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Login</ModalHeader>
+          <ModalHeader className="logInHeader" toggle={this.toggle}>Login</ModalHeader>
           <ModalBody>
             {this.state.msg ? (
               <Alert color='danger'>{this.state.msg}</Alert>
             ) : null}
-            <Form onSubmit={this.onSubmit}>
+            <Form className="logIn" onSubmit={this.onSubmit}>
               <FormGroup>
                 <Label for='email'>Email</Label>
                 <Input
